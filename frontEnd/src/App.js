@@ -1,13 +1,13 @@
 import './App.css';
-import FrontToBack from './FrontToBack.js';
+import Header from './component/Header';
+/* import FrontToBack from './FrontToBack.js'; */
 
 function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <FrontToBack />
-      </header>
+      <Header />
+      {/* <FrontToBack /> */}
     </div>
   );
 }
