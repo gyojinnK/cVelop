@@ -1,0 +1,15 @@
+body{margin: 0; padding: 0;}
+
+.App{width: 80%; margin: 0 auto;}
+
+.mainWrap{width: 80%; margin: 0 auto;}
+
+header{margin-top: 1%;}
+header .hWrap{height: 80px; display: flex; align-items: center; position: relative;}
+header .hWrap img{width: 80px; height: 80px; }
+header nav{display: inline-block; height: fit-content; position: absolute; right: 0;}
+header nav p{text-decoration: none; padding: 0 0 0 10px;}
+
+section{background-color: aquamarine;}
+
+footer{background-color: burlywood;}
