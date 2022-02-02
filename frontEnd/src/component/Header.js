@@ -1,4 +1,5 @@
 /* import cvLogo from "frontEnd/src/img/cVelop_logo2.png" */
+import "./css/Header.css"
 
 export default function Header(){
     return(
