@@ -15,13 +15,14 @@ section .chatingArea{
     justify-content: center;
     align-items: center;
     transition: 1s;
+    color: rgba(0, 0, 0, 0.3);
 }
 section .chatingArea:hover{
     width: 100%; 
     height: 95%;
     background-color: var(--color-puple);
+    color: white;
 }
 section .chatingArea .exText{
     font-size: 2rem;
-    opacity: 30%;
 }
