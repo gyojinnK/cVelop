@@ -8,8 +8,7 @@ export default function Header(){
                 <div className="hWrap">
                     <img src={require('./img/cVelop_logo2.png')} alt="logo" />
                     <nav>
-                        <p>menu1</p>
-                        <p>menu2</p>
+                        <a href="#exit">Exit</a>
                     </nav>
                 </div>
             </header>
