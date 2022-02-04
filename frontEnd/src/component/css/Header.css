@@ -1,6 +1,6 @@
 .mainWrap{width: 80%; margin: 0 auto;}
 
-header{margin-top: 10px;}
+header{width: 80%; margin: 1% auto 0;}
 header .hWrap{height: 80px; display: flex; align-items: center; position: relative;}
 header .hWrap img{width: 80px; height: 80px; }
 header nav{display: inline-block; height: fit-content; position: absolute; right: 0;}

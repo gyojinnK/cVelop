@@ -1,4 +1,6 @@
 section{
+    width: 80%; 
+    margin: 0 auto;
     margin-top: 10px; 
     height: 60vh; 
     /* background-color: var(--color-darkPuple);  */
@@ -6,23 +8,45 @@ section{
     display: flex; 
     align-items: center; 
     justify-content: center;
+    position: relative;
+}
+section .clickBtn{
+    position: absolute;
+    color: var(--color-darkPuple);
+    font-size: 2rem;
+    font-weight: 500;
+    z-index: 100;
 }
 section .chatingArea{
     border-radius: 25px; 
-    width: 200px;
-    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 1s;
-    color: rgba(0, 0, 0, 0.3);
-}
-section .chatingArea:hover{
+    background-color: var(--color-puple);
     width: 100%; 
     height: 95%;
-    background-color: var(--color-puple);
     color: white;
+    opacity: 0%;
 }
 section .chatingArea .exText{
     font-size: 2rem;
+    position: relative;
+}
+section .chatingArea .exText p{
+    position: absolute;
+    bottom: -1;
+    right: 0;
+    margin: 10% 0 0 0; padding: 0;
+    font-size: 1rem;
+    width: 60px;
+    text-align: center;
+    transition: 1.5s;
+}
+section .chatingArea .exText p:hover{
+    color: var(--color-darkPuple);
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 1px solid aliceblue;
+    box-sizing: border-box;
 }

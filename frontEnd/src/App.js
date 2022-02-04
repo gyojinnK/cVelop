@@ -3,6 +3,7 @@ import './index.css';
 import Header from './component/Header';
 import { useEffect, useState } from "react";
 import Section from './component/Section';
+import StartC from './component/StartC';
 
 /* ============Spring boot 연동============ */
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      <StartC />
       <Header />
       <Section />
       <p>
