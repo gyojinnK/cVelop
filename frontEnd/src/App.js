@@ -1,30 +1,23 @@
 import './App.css';
 import './index.css';
-import Header from './component/Header';
-import { useEffect, useState } from "react";
-import Section from './component/Section';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainBoard from './component/MainBoard';
 import StartC from './component/StartC';
+import FrontToBack from './FrontToBack';
 
-/* ============Spring boot 연동============ */
 function App() {
-  const [message, setMessage] = useState("")
-
-  useEffect(()=>{
-    fetch("/test")
-      .then(res => res.text())
-      .then(m=>setMessage(m))
-  }, []);
-  /* ============Spring boot 연동============ */
-
   return (
-    <div className="App">
-      <StartC />
-      <Header />
-      <Section />
-      <p>
-        {message}
-      </p>
-    </div>
+    <>
+      <BrowserRouter>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<StartC />} />
+            <Route path="/MainBoard" element={<MainBoard />} />
+            <Route path="/FrontToBack" element={<FrontToBack />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
