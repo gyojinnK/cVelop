@@ -1,4 +1,4 @@
-package com.example.backEnd.config;
+package com.example.backEnd;
 
 import com.example.backEnd.service.ChatMessage;
 import com.example.backEnd.service.ChatRoom;
@@ -10,8 +10,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
-
-import java.util.logging.Logger;
 
 @Component
 @RequiredArgsConstructor
