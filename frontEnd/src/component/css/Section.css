@@ -1,43 +1,6 @@
-.mainWrap{width: 50%; margin: 0 auto;}
-
-header{ 
-    margin: 40px auto 0;
-}
-header .hWrap{
-    height: 80px; 
-    display: flex; 
-    align-items: center; 
-    position: relative;
-}
-header .hWrap img{
-    width: 80px; 
-    height: 80px; 
-}
-header nav{
-    display: inline-block; 
-    height: fit-content; 
-    position: absolute; 
-    right: 0;
-}
-header nav a{
-    text-decoration: none; 
-    border-bottom: 0px solid var(--color-darkPuple); 
-    color: var(--color-puple); 
-    font-size: 2rem; 
-    font-weight: 300; 
-    transition: 0.5s;
-}
-header nav a:hover{
-    border-bottom: 0.2rem solid var(--color-darkPuple); 
-    color: var(--color-darkPuple); 
-    font-weight: 700;
-}
-
 section{ 
-    margin: 0 auto;
     margin-top: 40px; 
     height: 60vh; 
-    /* background-color: var(--color-darkPuple);  */
     border-radius: 25px; 
     display: flex; 
     align-items: center; 

@@ -1,0 +1,29 @@
+.Area{
+    margin: 30vh auto;
+    background-color: var(--color-puple);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+
+    position: relative;
+}
+.Area:hover{
+    margin: 50px auto;
+    width: 100%;
+    height: 60vh;
+    border-radius: 30px;
+}
+.Area ul{
+    list-style: none;
+    display: none;
+}
+.Area ul li{
+    margin: 20px 0;
+    color: aliceblue;
+}
+/* .Area ul Link{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} */
