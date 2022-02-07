@@ -1,5 +1,11 @@
 package com.example.backEnd.config;
 
+import com.example.backEnd.service.ChatMessage;
+import com.example.backEnd.service.ChatRoom;
+import com.example.backEnd.service.ChatService;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
@@ -8,15 +14,19 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 import java.util.logging.Logger;
 
 @Component
+@RequiredArgsConstructor
+@Slf4j
 public class WebSocketChatHandler extends TextWebSocketHandler {
-
-    private final static Logger LOG = Logger.getGlobal();
+    private final ObjectMapper objectMapper;
+    private final ChatService chatService;
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-        String input = message.getPayload();
-        LOG.info(input);        // 채팅 log
-        TextMessage textMessage = new TextMessage("Hello, 반갑습니다~. \n WebSocket Test 입니다.");
-        session.sendMessage(textMessage);
+        String payload = message.getPayload();
+        log.info("payload {}",payload);
+
+        ChatMessage chatMessage = objectMapper.readValue(payload,ChatMessage.class);
+        ChatRoom room = chatService.findRoomById(chatMessage.getRoomid());
+        room.handleActions(session,chatMessage,chatService);
     }
 }
