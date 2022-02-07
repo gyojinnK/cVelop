@@ -1,3 +1,4 @@
+/*
 package com.example.backEnd;
 
 import com.example.backEnd.service.ChatMessage;
@@ -28,3 +29,4 @@ public class WebSocketChatHandler extends TextWebSocketHandler {
         room.handleActions(session,chatMessage,chatService);
     }
 }
+ */
