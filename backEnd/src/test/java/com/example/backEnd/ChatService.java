@@ -1,5 +1,6 @@
-package com.example.backEnd.service;
+/* package com.example.backEnd;
 
+import com.example.backEnd.service.ChatRoom;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -54,3 +55,4 @@ public class ChatService {
         }
     }
 }
+ */
