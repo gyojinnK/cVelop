@@ -13,8 +13,13 @@ export default function FrontToBack(){
 
     return(
         <>
-            <p>{message}</p>
-            <Link to="/MainBoard" style={{textDecoration : "none", fontSize : "50px"}}>Back!</Link>
+            <p style={{
+                fontSize: "1rem",
+                /* position: "absolute",
+                bottom: "20px" */
+                textAlign: "center"
+            }}>{message}</p>
+            {/* <Link to="/MainBoard" style={{textDecoration : "none", fontSize : "50px"}}>Back!</Link> */}
         </>
     )
 }

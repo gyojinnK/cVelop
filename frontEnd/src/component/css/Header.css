@@ -1,0 +1,24 @@
+.mainWrap{width: 50%; margin: 0 auto;}
+
+header{ 
+    margin: 40px auto 0;
+}
+header .hWrap{
+    background-color: var(--color-puple);
+    height: 80px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    border-radius: 30px 0 30px 0;
+}
+header .hWrap img{
+    height: 80px; 
+}
+header .hWrap p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

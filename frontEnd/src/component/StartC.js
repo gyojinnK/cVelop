@@ -15,7 +15,7 @@ export default function StartC(){
                     <fieldset>
                         <legend>Set your NickName!</legend>
                         <input type="text" placeholder="write here!"></input>
-                        <Link to="/MainBoard">
+                        <Link to="/Header/Nav">
                             <button>GO</button>
                         </Link>
                     </fieldset>
