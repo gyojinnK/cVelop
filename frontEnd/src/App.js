@@ -7,6 +7,7 @@ import Section from './component/Section';
 import Header from './component/Header';
 import NavBtn from './component/NavBtn';
 import ChatList from './component/ChatList';
+import Entrance from './component/Entrance';
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
             <Route path='/Header/Nav' element={<Header />} />
           </Routes> */}
           <Routes>
-            <Route path="/Header/Nav" element={<NavBtn />} />
-            <Route path="/Header/ChatList" element={<ChatList />} />
-            <Route path="/Header/Section" element={<Section />} />
+            <Route path="/Nav" element={<NavBtn />} />
+            <Route path="/Entrance" element={<Entrance />} />
+            <Route path="/ChatList" element={<ChatList />} />
+            <Route path="/Section" element={<Section />} />
             {/* <Route path="/FrontToBack" element={<FrontToBack />} /> */}
           </Routes>
           <FrontToBack />

@@ -5,8 +5,8 @@ export default function NavBtn(){
     return(
         <>
             <nav>
-                <Link className="link" to="/Header/ChatList">List</Link>
-                <Link className="link" to="">Entrance</Link>
+                <Link className="link" to="/ChatList">List</Link>
+                <Link className="link" to="/Entrance">Entrance</Link>
                 <Link className="link" to="/">Exit</Link>
             </nav>
         </>
