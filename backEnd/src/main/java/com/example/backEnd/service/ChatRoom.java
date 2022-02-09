@@ -1,13 +1,17 @@
 package com.example.backEnd.service;
 
+import java.util.UUID;
+import lombok.Getter;
+import lombok.Setter;
 
 import lombok.Builder;
-import lombok.Getter;
 import org.springframework.web.socket.WebSocketSession;
 
 import java.util.HashSet;
 import java.util.Set;
 
+
+/* websocket.ver
 @Getter
 public class ChatRoom {
     private String roomId;      // 채팅방 id
@@ -32,5 +36,21 @@ public class ChatRoom {
 
     public <T> void sendMessage (T message, ChatService chatService) {
         sessions.parallelStream().forEach(session -> chatService.sendMessage(session, message));
+    }
+}
+*/
+
+// stomp.ver
+@Getter
+@Setter
+public class ChatRoom {
+    private String roomId;      // 채팅방 id
+    private String name;        // 채팅방 이름
+
+    public static ChatRoom create(String name) {
+        ChatRoom chatRoom = new ChatRoom();
+        chatRoom.roomId = UUID.randomUUID().toString();
+        chatRoom.name = name;
+        return chatRoom;
     }
 }
