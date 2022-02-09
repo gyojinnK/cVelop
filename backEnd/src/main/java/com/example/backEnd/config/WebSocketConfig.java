@@ -9,11 +9,6 @@ import org.springframework.web.socket.config.annotation.EnableWebSocket;
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 
-
-
-@Configuration
-@RequiredArgsConstructor
-@EnableWebSocket
 /* websocket.ver
 public class WebSocketConfig implements WebSocketConfigurer {
     private final WebSocketHandler webSocketHandler;
@@ -30,6 +25,9 @@ public class WebSocketConfig implements WebSocketConfigurer {
 */
 
 // stomp.ver
+@Configuration
+@RequiredArgsConstructor
+@EnableWebSocket
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
