@@ -2,12 +2,12 @@ import './App.css';
 import './index.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import StartC from './component/StartC';
-import FrontToBack from './FrontToBack';
 import Section from './component/Section';
 import Header from './component/Header';
 import NavBtn from './component/NavBtn';
 import ChatList from './component/ChatList';
 import Entrance from './component/Entrance';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -21,14 +21,14 @@ function App() {
           {/* <Routes>
             <Route path='/Header/Nav' element={<Header />} />
           </Routes> */}
-          <Routes>
+          <Routes className="routesWrap">
             <Route path="/Nav" element={<NavBtn />} />
             <Route path="/Entrance" element={<Entrance />} />
             <Route path="/ChatList" element={<ChatList />} />
             <Route path="/Section" element={<Section />} />
             {/* <Route path="/FrontToBack" element={<FrontToBack />} /> */}
           </Routes>
-          <FrontToBack />
+          <Footer />
         </div>
       </BrowserRouter>
     </>

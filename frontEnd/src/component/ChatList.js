@@ -14,11 +14,13 @@ export default function ChatList(){
         <>
             <div className="Area" onMouseOver={hoverEffect} onMouseOut={outEffect}>
                 <ul>
-                    <li className="li1">List1</li>
-                    <li className="li2">List2</li>
-                    <li className="li3">List3</li>
-                    <li className="li4">List4</li>
-                    <li className="li5">List5</li>
+                    <Link to="/Section" style={{textDecoration:"none"}}>
+                        <li className="li1">List1</li>
+                        <li className="li2">List2</li>
+                        <li className="li3">List3</li>
+                        <li className="li4">List4</li>
+                        <li className="li5">List5</li>
+                    </Link>
                     <Link to="/Nav" style={{
                         position:"absolute",
                         right: "50px",

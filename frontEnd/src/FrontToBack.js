@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom"
+/* import { Link } from "react-router-dom" */
 
 
 export default function FrontToBack(){
@@ -14,7 +14,8 @@ export default function FrontToBack(){
     return(
         <>
             <p style={{
-                fontSize: "1rem",
+                fontSize: "0.55rem",
+                display: "inline-block",
                 /* position: "absolute",
                 bottom: "20px" */
                 textAlign: "center"

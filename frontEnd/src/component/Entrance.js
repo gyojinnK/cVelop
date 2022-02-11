@@ -17,7 +17,12 @@ export default function Entrance(){
     function submitBtnOut(){
         document.querySelector(".submitBtn").value = "Make Room"
     }
-
+    function togglePwPopup(){
+        document.querySelector(".togglePw").style.display = "inline-block"
+    }
+    function togglePwPopdown(){
+        document.querySelector(".togglePw").style.display = "none"
+    }
     return(
         <>
             <div className="entranceWrap">
@@ -37,9 +42,13 @@ export default function Entrance(){
                         <input className="input1" id="countInput" type="text" />
 
                         <label for="publicBox">Public</label>
-                        <input type="radio" id="publicBox" name="radio_box" checked />
+                        <input type="radio" id="publicBox" name="radio_box" checked onClick={togglePwPopdown}/>
                         <label for="privateBox">Private</label>
-                        <input type="radio" id="privateBox" name="radio_box" />
+                        <input type="radio" id="privateBox" name="radio_box" onClick={togglePwPopup} />
+                        <div className="togglePw">
+                            <label for="privatePw">Password</label>
+                            <input type="text" id="privatePw" />
+                        </div>
 
                         <input className="submitBtn" type="submit" value="Make Room" onMouseOver={submitBtnHover} onMouseOut={submitBtnOut}/>
                     </fieldset>

@@ -1,0 +1,26 @@
+footer{
+    /* margin-bottom: 40px; */
+    background-color: var(--color-puple);
+    width: 100%;
+    height: 80px;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer .footerWrap{
+    min-width: 435px;
+    width: 80%;
+    margin: 0 auto;
+    color: aliceblue;
+}
+footer .footerWrap dl{
+    display: inline-block;
+    width: 200px;
+    font-size: 0.5rem;
+}
+.ftbCom{
+    margin: 0;
+    padding: 0;
+}
