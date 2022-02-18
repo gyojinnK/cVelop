@@ -1,0 +1,33 @@
+.sectionSB{
+    height: 68vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%; 
+}
+.sectionSB input{
+    width: 50%;
+    border-bottom: 2px solid var(--color-darkPuple);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: var(--color-puple);
+    color: aliceblue;
+    font-family: "Consolas";
+    outline: none;
+    font-size: 1rem;
+    padding-left: 2%;
+}
+.sectionSB input::placeholder{
+    color: aliceblue;
+    opacity: 0.5;
+}
+.sectionSB button{
+    font-family: "Consolas";
+    color: aliceblue;
+    border-radius: 10px 10px 10px 0;
+    background-color: var(--color-darkPuple);
+    border: none;
+    font-size: 1.222rem;
+}

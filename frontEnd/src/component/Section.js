@@ -1,5 +1,6 @@
 import "./css/Section.css"
 import { Link } from "react-router-dom"
+import SectionSendBox from "./SectionSendBox";
 
 export default function Section(){
     /* function click(){
@@ -27,8 +28,8 @@ export default function Section(){
 {/*                 <div className="clickBtn" onClick={click}>Click_me</div> */}
                 <div className="chatingArea isOpenTrue">
                     <div className="exText">
-                        <input type="text" placeholder="Words are sharper than you think.^^"></input>
-                        <button>Send</button>
+                        <SectionSendBox className="Section_SB"/>
+                        {/* ^ 이 컴포넌트가 Send박스 따로 분리한 컴포넌트입니다!! */}
                         <div className="linkWrap" onMouseOver={xHover} onMouseOut={xMouseOut}>
                             <Link to="/Chatlist" className="linkBackBtn">
                                 <img className="linkImg" src={require('./img/close.png')} alt="logo" />

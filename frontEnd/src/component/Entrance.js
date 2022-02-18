@@ -50,7 +50,9 @@ export default function Entrance(){
                             <input type="text" id="privatePw" />
                         </div>
 
-                        <input className="submitBtn" type="submit" value="Make Room" onMouseOver={submitBtnHover} onMouseOut={submitBtnOut}/>
+                        <Link to="/ChatList">
+                            <input className="submitBtn" type="submit" value="Make Room" onMouseOver={submitBtnHover} onMouseOut={submitBtnOut}/>
+                        </Link>
                     </fieldset>
                 </form>
             </div>

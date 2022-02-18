@@ -26,39 +26,6 @@ section .chatingArea{
 /*     opacity: 0%; */
     position: relative;
 }
-section .chatingArea .exText{
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%; 
-    height: 95%;
-}
-section .chatingArea .exText input{
-    width: 50%;
-    border-bottom: 2px solid var(--color-darkPuple);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background-color: var(--color-puple);
-    color: aliceblue;
-    font-family: "Consolas";
-    outline: none;
-    font-size: 1rem;
-    padding-left: 2%;
-}
-section .chatingArea .exText input::placeholder{
-    color: aliceblue;
-    opacity: 0.5;
-}
-section .chatingArea .exText button{
-    font-family: "Consolas";
-    color: aliceblue;
-    border-radius: 10px 10px 10px 0;
-    background-color: var(--color-darkPuple);
-    border: none;
-    font-size: 1.222rem;
-}
 .SRT{
     display: block;
     background-color: var(--color-puple);

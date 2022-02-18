@@ -22,3 +22,6 @@ header .hWrap p{
     font-size: 1.5rem;
     font-weight: 500;
 }
+header .hWrap .userNick{
+    width: 100px;
+}
