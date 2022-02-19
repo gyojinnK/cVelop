@@ -6,6 +6,7 @@ body{
 .App{
     margin: 0 auto;
     width: 50%;
+    min-width: 370px;
 }
 .routesWrap{
     width: 100%;

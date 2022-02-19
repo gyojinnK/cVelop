@@ -1,5 +1,5 @@
 import "./css/Header.css"
-import "./StartC.js"
+import SetNick from "./SetNick"
 
 export default function Header(){
     return(
@@ -8,7 +8,7 @@ export default function Header(){
                 <div className="hWrap">
                     <img src={require('./img/cVelop_logo1.png')} alt="logo" />
                     <p>Chat</p>
-                    <p className="userNick"></p>
+                    <SetNick />
                 </div>
             </header>
         </>

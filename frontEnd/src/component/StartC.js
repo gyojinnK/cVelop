@@ -1,12 +1,15 @@
 import "./css/StartC.css"
 import { Link } from "react-router-dom"
-
-/* function nextPage(){
-    let wrap = document.querySelector(".wrap");
-    wrap.style.display = "none";
-} */
+import SetNick from "./SetNick";
+import { useState } from "react";
 
 export default function StartC(){
+    const [text, setText] = useState("");
+    const onChange = (e) => {
+        setText(e.target.value);
+    };
+    console.log({text});
+    <SetNick name={text}/>
     return(
         <>
             <div className="wrap">
@@ -14,7 +17,7 @@ export default function StartC(){
                 <form>
                     <fieldset>
                         <legend>Set your NickName!</legend>
-                        <input type="text" placeholder="write here!"></input>
+                        <input type="text" placeholder="write here!" onChange={onChange} value={text}/>
                         <Link to="/Nav">
                             <button>GO</button>
                         </Link>
