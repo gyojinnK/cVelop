@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 import "./css/ChatList.css"
 
 export default function ChatList(){
-    function hoverEffect(){
+    /* function hoverEffect(){
         let ul = document.querySelector("ul");
         ul.style.display = "inline-block";
     }
     function outEffect(){
         let ul = document.querySelector("ul");
         ul.style.display = "none"
-    }
+    } */
     return(
         <>
-            <div className="Area" onMouseOver={hoverEffect} onMouseOut={outEffect}>
+            <div className="Area" /* onMouseOver={hoverEffect} onMouseOut={outEffect} */>
                 <ul>
                     <Link to="/Section" style={{textDecoration:"none"}}>
                         <li className="li1">List1</li>
